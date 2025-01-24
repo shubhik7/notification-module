@@ -8,7 +8,7 @@ import AddNotificationForm from "./components/AddNotificationForm";
 
 import "./Notification.css";
 
-export default NotificationModule = () => {
+const NotificationModule = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   // Save notifications to localStorage when they change
@@ -105,3 +105,5 @@ export default NotificationModule = () => {
     </div>
   );
 };
+
+export default NotificationModule;

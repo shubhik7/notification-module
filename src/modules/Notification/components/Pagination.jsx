@@ -1,7 +1,7 @@
 import "./Pagination.css";
 import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
 
-export default Pagination = ({
+const Pagination = ({
   currentPage,
   totalItems,
   itemsPerPage,
@@ -29,3 +29,5 @@ export default Pagination = ({
     </div>
   );
 };
+
+export default Pagination;

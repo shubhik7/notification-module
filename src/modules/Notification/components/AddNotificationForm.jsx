@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./AddNotificationForm.css";
 
-export default AddNotificationForm = ({ onAddNotification }) => {
+const AddNotificationForm = ({ onAddNotification }) => {
   const [title, setTitle] = useState("");
 
   const handleSubmit = (e) => {
@@ -25,3 +25,5 @@ export default AddNotificationForm = ({ onAddNotification }) => {
     </div>
   );
 };
+
+export default AddNotificationForm;

@@ -1,6 +1,6 @@
 import "./NotificationControls.css";
 
-export default NotificationControls = ({
+const NotificationControls = ({
   filter,
   sortOrder,
   onFilterChange,
@@ -38,3 +38,5 @@ export default NotificationControls = ({
     </div>
   </div>
 );
+
+export default NotificationControls;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { VscTrash, VscEdit } from "react-icons/vsc";
 import "./NotificationList.css";
 
-export default NotificationList = ({
+const NotificationList = ({
   notifications,
   onToggleRead,
   onDelete,
@@ -83,3 +83,5 @@ export default NotificationList = ({
     </div>
   );
 };
+
+export default NotificationList;
