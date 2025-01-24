@@ -1,0 +1,12 @@
+.add-notification-form input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-notification-form button:hover {
+  background-color: #007bff;
+  color: white;
+}

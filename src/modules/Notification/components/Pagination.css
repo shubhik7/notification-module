@@ -1,0 +1,23 @@
+.notification-filter button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  border-radius: 100%;
+  box-shadow: none;
+  border: none;
+  box-shadow: 0 2px 5px rgb(22, 16, 16);
+}
+
+.pagination span {
+  margin: 0px 3px;
+  color: blue;
+}

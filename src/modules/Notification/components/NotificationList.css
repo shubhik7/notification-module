@@ -1,0 +1,76 @@
+.notification-item {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.notification-item.read {
+  background-color: #f0f0f0;
+}
+
+.edit-mode {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-mode input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-mode button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-mode button:first-of-type {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-mode button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+  gap: 10px;
+}
+
+.notification-content h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+  text-align: left;
+}
+
+.notification-content p {
+  text-align: right;
+}
+
+.notification-actions button:last-child:hover {
+  background-color: #e60d26;
+}
+
+.notification-read:hover {
+  background-color: #28a745;
+}
+
+.notification-unread:hover {
+  background-color: #e60d26;
+}
+
+.notification-edit:hover {
+  background-color: #e5600e;
+  color: #f0f0f0;
+}
