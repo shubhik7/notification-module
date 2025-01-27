@@ -43,9 +43,6 @@ export function reducer(state, action) {
     case "SET_PAGE":
       return { ...state, currentPage: action.payload };
 
-    case "SET_FILTER":
-      return { ...state, filter: action.payload, currentPage: 1 };
-
     case "SET_SORT_ORDER":
       return { ...state, sortOrder: action.payload };
 
