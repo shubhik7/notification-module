@@ -16,7 +16,6 @@ const NotificationModule = () => {
     localStorage.setItem("notifications", JSON.stringify(state.notifications));
   }, [state.notifications]);
 
-  // Derived state: filter and paginate notifications
   const filteredNotifications = state.notifications
     .filter((n) => {
       if (state.filter === "read") return n.read;
@@ -47,7 +46,7 @@ const NotificationModule = () => {
     dispatch({ type: "ADD_NOTIFICATION", payload: newNotification });
   };
 
-  // Update notification (toggle read/unread)
+  // Update notification
   const updateNotification = (id, newTitle) => {
     dispatch({
       type: "UPDATE_NOTIFICATION",
@@ -68,9 +67,6 @@ const NotificationModule = () => {
       payload: { id, read: !read },
     });
   };
-
-  console.log(filteredNotifications);
-  console.log(paginatedNotifications);
 
   return (
     <div className="notification-module">
